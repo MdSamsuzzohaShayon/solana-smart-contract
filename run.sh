@@ -43,7 +43,7 @@ solana balance
 solana balance BNaH5xsqUs3PRjLRc2FgKZCT5wCbpXF59Rr9cQGD7CXg
 
 # Airdrop SOL
-solana airdrop 2
+solana airdrop 100
 
 # Account details
 solana account BNaH5xsqUs3PRjLRc2FgKZCT5wCbpXF59Rr9cQGD7CXg
