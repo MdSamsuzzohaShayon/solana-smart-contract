@@ -1,7 +1,3 @@
-Here's an improved version of your `README.md` with better formatting, grammar, and clarity:  
-
----
-
 # **Solana Blockchain Development**  
 
 📌 **Reference Video:** [Jump to 00:08:50](https://youtu.be/amAq-WHAFs8?t=530)  
@@ -39,15 +35,3 @@ We will build a Solana program using **[Solana Playground](https://beta.solpg.io
 
 ---
 
-
-
-
-
-
-
-
-Give me step by step guide to explain this smart contract
-Explain rust syntex
-Explain this program
-Compare and find similarities with JavaScript
-Fix variable spelling mistakes if there is any
