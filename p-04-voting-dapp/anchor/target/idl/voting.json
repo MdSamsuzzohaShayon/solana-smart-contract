@@ -24,9 +24,87 @@
           "name": "signer",
           "writable": true,
           "signer": true
+        },
+        {
+          "name": "poll",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "arg",
+                "path": "pool_id"
+              }
+            ]
+          }
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
         }
       ],
-      "args": []
+      "args": [
+        {
+          "name": "_poll_id",
+          "type": "u64"
+        },
+        {
+          "name": "_description",
+          "type": "string"
+        },
+        {
+          "name": "_poll_start",
+          "type": "u64"
+        },
+        {
+          "name": "_poll_end",
+          "type": "u64"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Poll",
+      "discriminator": [
+        110,
+        234,
+        167,
+        188,
+        231,
+        136,
+        153,
+        111
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "Poll",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "poll_id",
+            "type": "u64"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "name": "poll_start",
+            "type": "u64"
+          },
+          {
+            "name": "poll_end",
+            "type": "u64"
+          },
+          {
+            "name": "candidate_amount",
+            "type": "u64"
+          }
+        ]
+      }
     }
   ]
 }

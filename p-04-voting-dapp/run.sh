@@ -24,4 +24,6 @@ npm run dev
 cd anchor
 anchor build
 
+# anchor-bankrun is a small but powerful extension to solana-bankrun that enables using both Anchor and Bankrun with only a one-line code change. 
+npm install anchor-bankrun
 
