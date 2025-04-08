@@ -19,17 +19,17 @@ pub mod voting {
 
     // this is a function that initializes the poll account
     pub fn initialize_poll(
-      _ctx: Context<InitializePoll>, 
-      _poll_id: u64, 
-      _description: String, 
-      _poll_start: u64, 
-      _poll_end: u64) -> ProgramResult{
+      ctx: Context<InitializePoll>, 
+      poll_id: u64, 
+      description: String, 
+    poll_start: u64, 
+      poll_end: u64) -> ProgramResult{
         // Initialize the poll account 
-        let poll = &mut _ctx.accounts.poll;
-        poll.poll_id = _poll_id;
-        poll.description = _description;
-        poll.poll_start = _poll_start;
-        poll.poll_end = _poll_end;
+        let poll = &mut ctx.accounts.poll;
+        poll.poll_id = poll_id;
+        poll.description = description;
+        poll.poll_start = poll_start;
+        poll.poll_end = poll_end;
         poll.candidate_amount = 0;  
       // Ok is a macro that returns a Result<(), Error> Ok is a macro that returns a Result<(), Error>
       Ok(())
@@ -40,7 +40,7 @@ pub mod voting {
 // Instruction is a macro that derives the Accounts trait for the InitializePoll struct
 // InitializePoll is a struct that contains the accounts for the InitializePoll instruction
 #[derive(Accounts)]
-#[instruction(pool_id: u64)]
+#[instruction(poll_id: u64)]
 pub struct InitializePoll<'info>{
   // Mut is a macro that makes the account mutable
   // Signer is a macro that makes the account a signer
@@ -53,7 +53,7 @@ pub struct InitializePoll<'info>{
     init,
     payer = signer,
     space = 8 + Poll::INIT_SPACE,
-    seeds = [pool_id.to_le_bytes().as_ref()],
+    seeds = [poll_id.to_le_bytes().as_ref()],
     bump,
   )]
   pub poll: Account<'info, Poll>, 
@@ -73,3 +73,5 @@ pub struct Poll{
   pub candidate_amount: u64,
 }
 
+// For testing we need to use anchor-bankrun
+// https://github.com/kevinheavey/anchor-bankrun

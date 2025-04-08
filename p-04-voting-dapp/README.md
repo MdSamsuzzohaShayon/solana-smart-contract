@@ -10,6 +10,9 @@
 - Anchor CLI 0.30.1 or higher
 - Solana CLI 1.18.17 or higher
 
+### Testing
+ - [01:12:54](https://youtu.be/amAq-WHAFs8?t=4374)
+
 ### Installation
 
 #### Clone the repo

@@ -38,7 +38,7 @@ export type Voting = {
             "seeds": [
               {
                 "kind": "arg",
-                "path": "poolId"
+                "path": "pollId"
               }
             ]
           }

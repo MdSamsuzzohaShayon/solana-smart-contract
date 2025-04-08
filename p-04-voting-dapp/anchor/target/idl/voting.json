@@ -32,7 +32,7 @@
             "seeds": [
               {
                 "kind": "arg",
-                "path": "pool_id"
+                "path": "poll_id"
               }
             ]
           }
@@ -44,19 +44,19 @@
       ],
       "args": [
         {
-          "name": "_poll_id",
+          "name": "poll_id",
           "type": "u64"
         },
         {
-          "name": "_description",
+          "name": "description",
           "type": "string"
         },
         {
-          "name": "_poll_start",
+          "name": "poll_start",
           "type": "u64"
         },
         {
-          "name": "_poll_end",
+          "name": "poll_end",
           "type": "u64"
         }
       ]

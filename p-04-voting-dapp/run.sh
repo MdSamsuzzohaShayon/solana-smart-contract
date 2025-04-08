@@ -27,3 +27,11 @@ anchor build
 # anchor-bankrun is a small but powerful extension to solana-bankrun that enables using both Anchor and Bankrun with only a one-line code change. 
 npm install anchor-bankrun
 
+# Create directory and copy binary file
+mkdir test/fixtures
+cp -r target/deploy/voting.so test/fixtures/voting.so
+
+# Run the tests
+anchor test --skip-local-validator --skip-deploy
+
+# Bankrun is depricated, use liteSVM instead - https://github.com/LiteSVM/litesvm/tree/master/crates/node-litesvm
