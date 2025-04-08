@@ -29,7 +29,7 @@ npm install anchor-bankrun
 
 # Create directory and copy binary file
 mkdir test/fixtures
-cp -r target/deploy/voting.so test/fixtures/voting.so
+cp -r target/deploy/voting.so tests/fixtures/voting.so
 
 # Run the tests
 anchor test --skip-local-validator --skip-deploy
