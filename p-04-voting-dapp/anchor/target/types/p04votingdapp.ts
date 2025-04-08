@@ -110,3 +110,6 @@ export type P04votingdapp = {
     },
   ]
 }
+
+
+// tutorial = https://youtu.be/amAq-WHAFs8?t=4631

@@ -1,10 +1,13 @@
-import * as anchor from '@coral-xyz/anchor'
-import { Program } from '@coral-xyz/anchor'
-import { Keypair } from '@solana/web3.js'
+import * as anchor from '@coral-xyz/anchor';
+import { Program } from '@coral-xyz/anchor';
+import { Keypair } from '@solana/web3.js';
+import { Voting } from 'anchor/target/types/voting';
 
-describe('voting', () => {
+const IDL = require('../target/idl/voting.json');
 
-  it('Initialize P04votingdapp', async () => {
+describe('Voting', () => {
+
+  it('Initialize Poll', async () => {
     
   });
 });
