@@ -1,10 +1,13 @@
+cargo-features = ["edition2024"]
+
 [package]
-name = "p-01-solana-first-program"
+name = "p-02-solana-first-program"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-solana-program = "2.1.14"
+solana-program = "2.1.20"
+
 
 [lib]
 crate-type = ["cdylib", "lib"]
