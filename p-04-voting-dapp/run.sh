@@ -35,3 +35,28 @@ cp -r target/deploy/voting.so tests/fixtures/voting.so
 anchor test --skip-local-validator --skip-deploy
 
 # Bankrun is depricated, use liteSVM instead - https://github.com/LiteSVM/litesvm/tree/master/crates/node-litesvm
+
+
+# Get the current solana config
+solana config get
+
+# Run the test validator
+solana-test-validator --reset
+
+# Set the current solana config to the local development environment
+solana config set -ul
+
+# Generate a new keypair
+solana-keygen new -o /home/shayon/.config/solana/id.json
+
+# Get the address of the new keypair
+solana address
+
+# Airdrop 5 SOL to the new keypair
+solana airdrop 5
+
+cd anchor
+# Deploy the program
+solana program deploy target/deploy/voting.so
+
+

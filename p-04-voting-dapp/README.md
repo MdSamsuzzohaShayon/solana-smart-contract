@@ -13,6 +13,14 @@
 ### Testing
  - [01:12:54](https://youtu.be/amAq-WHAFs8?t=4374)
 
+
+### Action and Blinks
+ - [01:50:33](https://youtu.be/amAq-WHAFs8?t=6633)
+ - [Docs](https://solana.com/developers/guides/advanced/actions)
+ - [Check program](https://explorer.solana.com/address/G7MxFDfDWjaJt5oac449KF9cwiFo3AxFKGjQj7oeUgqV?cluster=custom&customUrl=http%3A%2F%2Flocalhost%3A8899)
+
+____
+
 ### Installation
 
 #### Clone the repo
